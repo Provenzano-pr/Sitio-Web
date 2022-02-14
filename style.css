@@ -104,7 +104,10 @@ li a {
     color: darkgray;
 }
 
-
+li a:hover{
+    /* TRANSICION */
+    color: black;
+}
 
 
 
@@ -307,7 +310,29 @@ li a {
         justify-content: center;
     }
 
- 
+    .uno{
+        width: 23px;
+        height: 23px;
+        transition: 0.5s;
+    }
+
+    .uno:hover{
+        /* TRANSICION */
+        width: 30px;
+        height: 30px;
+    }
+
+    .dos{
+        width: 30px;
+        height: 20px;
+        transition: 0.5s;
+    }
+
+    .dos:hover{
+        /* TRANSICION */
+        width: 40px;
+        height: 26.6px;
+    }
 
     .copyright {
         display: grid;
