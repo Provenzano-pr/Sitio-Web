@@ -101,12 +101,12 @@ ul li {
 li a {
     text-decoration: none;
     /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
-    color: darkgray;
+    color: darkgray !important;
 }
 
 li a:hover{
     /* TRANSICION */
-    color: black;
+    color: black !important;
 }
 
 
