@@ -1,0 +1,290 @@
+@media screen and (min-width: 600px) {
+
+    html {
+        font-size: 62.5%;
+        /* PARA TRABAJAR CON UNIDADES RELATIVAS */
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+
+            .border {
+                padding: 0.5rem;
+                margin: 0.5rem;
+            }
+
+
+
+
+
+            /* HEADER */
+            .logo {
+                display: flex;
+                /* SIN ESTO EL LOGO NO QUEDA CENTRADO Y ADEMAS APARECE UNA BARRA DE DESPLAZAMIENTO */
+                justify-content: center;
+            }
+
+            ul {
+
+                li {
+                    /* LA LISTA SE VUELVE HORIZONTAL */
+                    display: inline;
+                    font-size: 1.5rem;
+                    /* ESPACIO ENTRE PALABRAS */
+                    margin: 4rem;
+
+                    a {
+                        /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
+                        text-decoration: none;
+                        color: darkgray;
+
+                        /* TRANSICION */
+                        &:hover {
+                            color: black;
+                        }
+
+                    }
+
+                    #black {
+                        color: black;
+                    }
+                }
+            }
+
+            /* MAIN */
+            #cuadrilla {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                /* SE ELIMINA UN AUTO PARA QUE NO QUEDE UN ESPACIO INFERIOR */
+                justify-items: center;
+                /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE HORIZONTAL */
+                align-items: center;
+                /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE VERTICAL */
+                grid-row-gap: 2rem;
+                /* ESPACIO ENTRE FILAS */
+
+                .ajuste {
+                    display: grid;
+                    grid-template-rows: auto auto auto;
+                    grid-template-columns: auto auto auto;
+                    grid-row-gap: 2rem;
+                    /* ESPACIO ENTRE FILAS */
+
+                    .imagenes {
+                        display: grid;
+                        width: 33rem;
+                        height: 33rem;
+                        filter: opacity(none);
+                        transition: 0.5s;
+        
+        
+                        /* TRANSICION */
+                        &:hover {
+                            filter: opacity(.3);
+                        }
+                    }
+                }
+            }
+
+            .texto {
+                margin: 5rem;
+    
+                p {
+                    font-size: 1.5rem;
+                    padding-right: 2rem;
+                }
+    
+                .iconos {
+                    margin-left: 20rem;
+                    margin-top: 5rem;
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .formulario {
+                background-color: gainsboro;
+                border-radius: 1rem;
+                /* 30px top/bottom y auto right/left (se centra el elemento) */
+                margin: 3rem auto;
+                padding: 1rem;
+                width: 50rem;
+                font-size: 12px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+    
+                button {
+                    margin-top: 1rem;
+                }
+            }
+
+            /* FOOTER */
+            .redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 0%;
+
+                .uno {
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    transition: 0.5s;
+
+                    /* TRANSICION */
+                    &:hover {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                .dos {
+                    width: 3rem;
+                    height: 2rem;
+                    transition: 0.5s;
+
+                    /* TRANSICION */
+                    &:hover {
+                        width: 4rem;
+                        height: 2.66rem;
+                    }
+                }
+            }
+
+
+            .fw-lighter {
+                display: grid;
+                font-size: 1.5rem;
+                color: darkgray;
+                /* ESPACIO DEBAJO DEL COPYRIGHT */
+                margin-bottom: 5rem;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 320px) {
+
+    html {
+        font-size: 62.5%;
+        /* PARA TRABAJAR CON UNIDADES RELATIVAS */
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+
+            .border {
+                padding: 0.5rem;
+                margin: 0.5rem;
+            }
+
+
+
+
+
+            /* HEADER */
+            .logo {
+                display: flex;
+                /* SIN ESTO EL LOGO NO QUEDA CENTRADO Y ADEMAS APARECE UNA BARRA DE DESPLAZAMIENTO */
+                justify-content: center;
+            }
+
+            ul {
+
+                li {
+                    /* LA LISTA SE VUELVE HORIZONTAL */
+                    display: inline;
+                    font-size: 1.5rem;
+                    /* ESPACIO ENTRE PALABRAS */
+                    margin: 2rem;
+
+                    a {
+                        /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
+                        text-decoration: none;
+                        color: darkgray;
+
+                        /* TRANSICION */
+                        &:hover {
+                            color: black;
+                        }
+
+                    }
+
+                    #black {
+                        color: black;
+                    }
+                }
+            }
+
+            /* MAIN */
+            #cuadrilla {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                /* SE ELIMINA UN AUTO PARA QUE NO QUEDE UN ESPACIO INFERIOR */
+                justify-items: center;
+                /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE HORIZONTAL */
+                align-items: center;
+                /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE VERTICAL */
+                grid-row-gap: 2rem;
+                /* ESPACIO ENTRE FILAS */
+
+                .ajuste {
+                    display: grid;
+                    grid-template-rows: auto auto auto auto auto auto;
+                    grid-template-columns: auto;
+                    grid-row-gap: 2rem;
+                    /* ESPACIO ENTRE FILAS */
+                }
+            }
+
+            .texto {
+                margin: 5rem;
+    
+                p {
+                    font-size: 1.5rem;
+                    padding-right: 2rem;
+                }
+    
+                .iconos {
+                    margin-left: 20rem;
+                    margin-top: 5rem;
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .formulario {
+                background-color: gainsboro;
+                border-radius: 1rem;
+                padding: 1rem;
+                font-size: 12px;
+    
+                button {
+                    margin-top: 1rem;
+                }
+            }
+
+            /* FOOTER */
+            .redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 0%;
+            }
+
+
+            .fw-lighter {
+                display: grid;
+                font-size: 1.5rem;
+                color: darkgray;
+                /* ESPACIO DEBAJO DEL COPYRIGHT */
+                margin-bottom: 5rem;
+                justify-content: center;
+            }
+        }
+    }
+}

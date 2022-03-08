@@ -1,0 +1,287 @@
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+    /* PARA TRABAJAR CON UNIDADES RELATIVAS */
+  }
+  html .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* HEADER */
+    /* MAIN */
+    /* FOOTER */
+  }
+  html .flex .border {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  html .flex .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* SIN ESTO EL LOGO NO QUEDA CENTRADO Y ADEMAS APARECE UNA BARRA DE DESPLAZAMIENTO */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html .flex ul li {
+    /* LA LISTA SE VUELVE HORIZONTAL */
+    display: inline;
+    font-size: 1.5rem;
+    /* ESPACIO ENTRE PALABRAS */
+    margin: 4rem;
+  }
+  html .flex ul li a {
+    /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
+    text-decoration: none;
+    color: darkgray;
+    /* TRANSICION */
+  }
+  html .flex ul li a:hover {
+    color: black;
+  }
+  html .flex ul li #black {
+    color: black;
+  }
+  html .flex #cuadrilla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    /* SE ELIMINA UN AUTO PARA QUE NO QUEDE UN ESPACIO INFERIOR */
+    justify-items: center;
+    /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE HORIZONTAL */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE VERTICAL */
+    grid-row-gap: 2rem;
+    /* ESPACIO ENTRE FILAS */
+  }
+  html .flex #cuadrilla .ajuste {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-row-gap: 2rem;
+    /* ESPACIO ENTRE FILAS */
+  }
+  html .flex #cuadrilla .ajuste .imagenes {
+    display: -ms-grid;
+    display: grid;
+    width: 33rem;
+    height: 33rem;
+    filter: alpha(none);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* TRANSICION */
+  }
+  html .flex #cuadrilla .ajuste .imagenes:hover {
+    -webkit-filter: opacity(0.3);
+            filter: opacity(0.3);
+  }
+  html .flex .texto {
+    margin: 5rem;
+  }
+  html .flex .texto p {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+  }
+  html .flex .texto .iconos {
+    margin-left: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  html .flex .formulario {
+    background-color: gainsboro;
+    border-radius: 1rem;
+    /* 30px top/bottom y auto right/left (se centra el elemento) */
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 50rem;
+    font-size: 12px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+  }
+  html .flex .formulario button {
+    margin-top: 1rem;
+  }
+  html .flex .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0%;
+  }
+  html .flex .redes .uno {
+    width: 2.3rem;
+    height: 2.3rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* TRANSICION */
+  }
+  html .flex .redes .uno:hover {
+    width: 3rem;
+    height: 3rem;
+  }
+  html .flex .redes .dos {
+    width: 3rem;
+    height: 2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* TRANSICION */
+  }
+  html .flex .redes .dos:hover {
+    width: 4rem;
+    height: 2.66rem;
+  }
+  html .flex .fw-lighter {
+    display: -ms-grid;
+    display: grid;
+    font-size: 1.5rem;
+    color: darkgray;
+    /* ESPACIO DEBAJO DEL COPYRIGHT */
+    margin-bottom: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 62.5%;
+    /* PARA TRABAJAR CON UNIDADES RELATIVAS */
+  }
+  html .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* HEADER */
+    /* MAIN */
+    /* FOOTER */
+  }
+  html .flex .border {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  html .flex .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* SIN ESTO EL LOGO NO QUEDA CENTRADO Y ADEMAS APARECE UNA BARRA DE DESPLAZAMIENTO */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html .flex ul li {
+    /* LA LISTA SE VUELVE HORIZONTAL */
+    display: inline;
+    font-size: 1.5rem;
+    /* ESPACIO ENTRE PALABRAS */
+    margin: 2rem;
+  }
+  html .flex ul li a {
+    /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
+    text-decoration: none;
+    color: darkgray;
+    /* TRANSICION */
+  }
+  html .flex ul li a:hover {
+    color: black;
+  }
+  html .flex ul li #black {
+    color: black;
+  }
+  html .flex #cuadrilla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    /* SE ELIMINA UN AUTO PARA QUE NO QUEDE UN ESPACIO INFERIOR */
+    justify-items: center;
+    /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE HORIZONTAL */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* EL ELEMENTO SE ALINEA AL CENTRO EN EJE VERTICAL */
+    grid-row-gap: 2rem;
+    /* ESPACIO ENTRE FILAS */
+  }
+  html .flex #cuadrilla .ajuste {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 2rem;
+    /* ESPACIO ENTRE FILAS */
+  }
+  html .flex .texto {
+    margin: 5rem;
+  }
+  html .flex .texto p {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+  }
+  html .flex .texto .iconos {
+    margin-left: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  html .flex .formulario {
+    background-color: gainsboro;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 12px;
+  }
+  html .flex .formulario button {
+    margin-top: 1rem;
+  }
+  html .flex .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0%;
+  }
+  html .flex .fw-lighter {
+    display: -ms-grid;
+    display: grid;
+    font-size: 1.5rem;
+    color: darkgray;
+    /* ESPACIO DEBAJO DEL COPYRIGHT */
+    margin-bottom: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
